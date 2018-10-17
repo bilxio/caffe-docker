@@ -1,0 +1,8 @@
+FROM bvlc/caffe:cpu
+
+LABEL maintainer haibxz@gmail.com
+
+ADD requirements.txt .
+RUN pip install -r requirements.txt
+
+EXPOSE 5000
